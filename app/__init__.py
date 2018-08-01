@@ -18,7 +18,15 @@ def create_app(config_name):
     # temporary route
     @app.route('/')
     def hello_world():
-        return 'Hello, World!'
+
+        db = MySQLdb.connect("localhost", "lf_admin", "lisphera2018","lisphera_db")
+        cur = db.cursor()
+        query = "select * from test;"
+        
+        cur.execute(query)
+        data = cur.fetchall()
+
+        return data.json_encoder()
 
 
 
