@@ -1,2 +1,3 @@
 venv
 lisphera/__pycache__
+lisphera/static/node_modules
