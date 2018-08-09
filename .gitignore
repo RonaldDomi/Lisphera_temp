@@ -1,3 +1,5 @@
 venv
-lisphera/__pycache__
-lisphera/static/node_modules
+lisphera.db
+logs
+
+__pycache__
